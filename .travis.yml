@@ -11,6 +11,7 @@ before_install:
   - chmod 755 ./travis-tool.sh
   - ./travis-tool.sh bootstrap
   - ./travis-tool.sh install_aptget r-cran-rmpi
+# Alternatively install the libopenmpi-dev package and install Rmpi from CRAN
 install:
   - ./travis-tool.sh install_deps
 script: ./travis-tool.sh run_tests
