@@ -17,7 +17,6 @@ License: GPL-3
 Suggests: Rmpi
 URL: http://dx.doi.org/10.1093/bioinformatics/btn482
         http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/3/411
-        http://www.csiro.au/people/Nathan.Watson-Haigh.html
 LazyLoad: yes
 Packaged: 2011-05-11 07:23:57 UTC; hornik
 Depends: R (>= 2.10)
