@@ -1,6 +1,6 @@
 Package: PCIT
 Version: 1.04-5
-Date: 2013-12-06
+Date: 2014-01-29
 Title: PCIT algorithm - Partial Correlation Coefficient with
         Information Theory
 Author: Nathan S. Watson-Haigh
@@ -18,7 +18,4 @@ Suggests: Rmpi
 URL: http://dx.doi.org/10.1093/bioinformatics/btn482
         http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/3/411
 LazyLoad: yes
-Packaged: 2011-05-11 07:23:57 UTC; hornik
 Depends: R (>= 2.10)
-Repository: CRAN
-Date/Publication: 2011-05-11 07:26:03
