@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nathanhaigh/pcit.png?branch=master)](https://travis-ci.org/nathanhaigh/pcit)
+[![Build Status](https://travis-ci.org/nathanhaigh/pcit.png?branch=adding_unit_tests)](https://travis-ci.org/nathanhaigh/pcit)
 pcit
 ====
 
