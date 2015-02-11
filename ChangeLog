@@ -1,4 +1,23 @@
 ======
+1.05-1
+======
+    API Changes
+    -----------
+    1) None
+    
+    Major Changes
+    -------------
+    1) None
+    
+    Minor Changes/Bug Fixes
+    -----------------------
+    1) Changed from require('Rmpi') to requireNamespace('Rmpi'). Now all Rmpi functions are addressed directly through their namespace.
+    
+    Build Changes
+    -------------
+    1) None
+    
+======
 1.04-6
 ======
     API Changes
@@ -17,7 +36,7 @@
     -------------
     1) None
     
-    
+
 ======
 1.04-5
 ======
