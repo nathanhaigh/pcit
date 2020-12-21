@@ -2,7 +2,7 @@
 
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.com/nathanhaigh/pcit.svg?branch=master)](https://travis-ci.com/nathanhaigh/pcit)
+[![Travis build status](https://travis-ci.org/nathanhaigh/pcit.svg?branch=master)](https://travis-ci.com/nathanhaigh/pcit)
 [![Codecov test coverage](https://codecov.io/gh/nathanhaigh/pcit/branch/master/graph/badge.svg)](https://codecov.io/gh/nathanhaigh/pcit?branch=master)
 <!-- badges: end -->
 
