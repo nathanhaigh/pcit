@@ -5,7 +5,7 @@ cache: packages
 os:
   - linux
   - osx
-  - windows
+#  - windows
 r:
   - oldrel
   - release
