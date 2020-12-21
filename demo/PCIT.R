@@ -31,10 +31,10 @@ cc <- clusteringCoefficient(m.new)
 ccp <- clusteringCoefficientPercent(m.new)
 ccp
 
-op <- par(mfrow=c(3,2))
+op <- graphics::par(mfrow=c(3,2))
 plot(density(m[upper.tri(m)]), main="Density Plot of Raw Correlation Coefficients", xlab="Correlation Coefficient")
-hist(cc, main="Connectivity Distribution", xlab="Proportion of Connections", ylab="Number of Genes")
-hist(cc*length(cc), main="Connectivity Distribution", xlab="Number of Connections", ylab="Number of Genes")
+graphics::hist(cc, main="Connectivity Distribution", xlab="Proportion of Connections", ylab="Number of Genes")
+graphics::hist(cc*length(cc), main="Connectivity Distribution", xlab="Number of Connections", ylab="Number of Genes")
 # plot the distribution of all correlations superimposed by that of the meaningful corrections in black
 plotCorCoeff(m, list("PCIT Significant" = meaningful.idx), col=c("black"))
 # plot the distribution of all correlations superimposed by that of the meaningful corrections in black and the absolute correlations > 0.5 in red
@@ -42,4 +42,4 @@ abs.idx <- which(abs(m) > 0.5)
 plotCorCoeff(m, list("abs. cor. > 0.5" = abs.idx, "PCIT Significant" = meaningful.idx), col=c("red", "black"))
 # we'll change the order and use some transparent colours using rgb()
 plotCorCoeff(m, list("PCIT Significant" = meaningful.idx, "abs. cor. > 0.5" = abs.idx), col=c(rgb(1,0,0,0.7), rgb(0,0,0,0.7)))
-par(op)
+graphics::par(op)

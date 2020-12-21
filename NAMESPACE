@@ -1,5 +1,14 @@
-useDynLib(PCIT)
-exportPattern("^[^\\.]")
+useDynLib(PCIT, .registration = TRUE)
 export(
-	pcit
+	clusteringCoefficient,
+	clusteringCoefficientPercent,
+	defineTasks,
+	getEdgeList,
+	idx,
+	idxInvert,
+	localClusteringCoefficient,
+	maxMatrixSize,
+	pcit,
+	pcitMemoryRequirement,
+	plotCorCoeff
 )

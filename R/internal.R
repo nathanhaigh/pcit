@@ -9,7 +9,6 @@
 		if (sum((.packages())=='Rmpi') == 0) {
 			return(run_parallel)
 		}
-		requireNamespace('Rmpi', quietly=TRUE)
 	}
 	
 	# Now, if Rmpi is loaded, make sure we have a bunch of slaves
@@ -75,7 +74,7 @@
 	
 	m_partials <- m
 	
-	result <- .Fortran( "pcit", correlations=as.single(m), partial_correlations=as.single(m_partials), nGenes=as.integer(nrow(m)), xVals=as.integer(x), nXVals=as.integer(length(x)), tolType=as.integer(tol.type) )
+	result <- .Fortran( "pcitf90", correlations=as.single(m), partial_correlations=as.single(m_partials), nGenes=as.integer(nrow(m)), xVals=as.integer(x), nXVals=as.integer(length(x)), tolType=as.integer(tol.type) )
 	
 	result$partial_correlations <- matrix(result$partial_correlations,nrow(m),ncol(m))
 	result$idx <- which(result$partial_correlations != 0, arr.ind=TRUE)

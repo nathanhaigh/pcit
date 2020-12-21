@@ -24,7 +24,7 @@ REAL(KIND=4) FUNCTION tolerance(xy, xz, yz, tolType)
 	RETURN
 END FUNCTION tolerance
 
-SUBROUTINE pcit(cor, pcor, nGenes, xVals, nXVals, tolType)
+SUBROUTINE pcitf90(cor, pcor, nGenes, xVals, nXVals, tolType)
 	
 	INTEGER :: nGenes, tolType
 	REAL(KIND=4) :: cor(nGenes,nGenes), pcor(nGenes,nGenes)
@@ -61,4 +61,3 @@ SUBROUTINE pcit(cor, pcor, nGenes, xVals, nXVals, tolType)
 		END DO
 	END DO
 END SUBROUTINE
-

@@ -5,7 +5,7 @@
 !	       k_i is the number of direct neighbours of node i
 !	k_i(k_i - 1)/2 is the maximum possible sum of abs adjacencies that could exist between the direct neighbours of node i.
 
-SUBROUTINE localCC(mat, nGenes, cc, E, k)
+SUBROUTINE localcc(mat, nGenes, cc, E, k)
 	INTEGER :: nGenes, k(nGenes), idx(nGenes)
 	REAL(KIND=4) :: mat(nGenes,nGenes), E(nGenes), cc(nGenes)
 	LOGICAL :: neighbours(nGenes)

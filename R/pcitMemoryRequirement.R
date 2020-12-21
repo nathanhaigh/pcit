@@ -2,22 +2,27 @@ pcitMemoryRequirement <- function(m, units=c("MB", "bytes", "KB", "GB", "TB"), n
 	double.bytes <- 8
 	units <- match.arg(units)
 	
-	if (class(m)=="numeric" | class(m)=="integer") {
+	if (methods::is(m, "numeric")) {
 		nNodes <- m
 	} else {
-		nNodes <- try(nrow(m), silent=TRUE)
-		if (class(nNodes) == "try-error" | is.null(nNodes)) {
-			cat("ERROR: argument 'm' must be a numeric OR an object on which nrow() can be performed.\n\n", geterrmessage())
-			return(FALSE)
-		}
+		nNodes <- tryCatch(
+			{
+				nrow(m)
+			},
+			error = function(cond) {
+				message("ERROR: argument 'm' must be a numeric OR an object on which nrow() can be performed.")
+				message(cond)
+				return(FALSE)
+			}
+		)
 	}
 	
 	switch(units,
-			"bytes" = { denominator <- 1024^0 },
-			"KB" = { denominator <- 1024^1 },
-			"MB" = { denominator <- 1024^2 },
-			"GB" = { denominator <- 1024^3 },
-			"TB" = { denominator <- 1024^4 }
+		"bytes" = { denominator <- 1024^0 },
+		"KB"    = { denominator <- 1024^1 },
+		"MB"    = { denominator <- 1024^2 },
+		"GB"    = { denominator <- 1024^3 },
+		"TB"    = { denominator <- 1024^4 }
 	)
 	
 	ram <- nNodes^2*double.bytes*nCopies / denominator

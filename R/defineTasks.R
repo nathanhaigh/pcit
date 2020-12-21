@@ -33,12 +33,12 @@ defineTasks <- function(n, nSlaves, tasksPerSlave=1, plot=FALSE) {
 	}
 	
 	if (plot) {
-		par(mfrow=c(2:1))
+		graphics::par(mfrow=c(2:1))
 		# Colours indicate the sets of gene trios assigned to the same task. By default, there is 1 task per slave CPU
 		plot(work, col=colours, pch=20, ylab="Work", xlab="Gene Trio Set (m)", main="Work per Set of Gene Trios")
 		
 		plot(cumsum(work)/max(cumsum(work))*100, col=colours, pch=20, ylab="Cumlative Work (%)", xlab="Gene Trio Set (m)", main="Cumlative Work for Sets of Gene Trios")
-		abline(h=c(cumsum(work)[c(slice_boundaries[2:(length(slice_boundaries)-1)])]/max(cumsum(work))*100))
+		graphics::abline(h=c(cumsum(work)[c(slice_boundaries[2:(length(slice_boundaries)-1)])]/max(cumsum(work))*100))
 	}
 	
 	return(tasks)
