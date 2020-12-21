@@ -1,8 +1,11 @@
-[![Build Status](https://travis-ci.org/nathanhaigh/pcit.png?branch=master)](https://travis-ci.org/nathanhaigh/pcit)
 pcit
 ====
 
-PCIT: an R package for weighted gene co-expression networks based on partial correlation and information theory approaches
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.com/nathanhaigh/pcit.svg?branch=master)](https://travis-ci.com/nathanhaigh/pcit)
+<!-- badges: end -->
+
+An R package for weighted gene co-expression networks based on partial correlation and information theory approaches
 
 Building and Submitting Packages
 ================================

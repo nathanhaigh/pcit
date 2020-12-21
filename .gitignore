@@ -166,3 +166,7 @@ pip-log.txt
 *.o
 *.so
 *.rds
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
