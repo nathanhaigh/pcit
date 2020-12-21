@@ -11,4 +11,5 @@ r_packages:
 addons:
   apt:
     packages:
-      libopenmpi-dev
+      mpi-default-dev
+      mpi-default-bin
