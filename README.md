@@ -3,6 +3,7 @@
 
 <!-- badges: start -->
 [![Travis build status](https://travis-ci.com/nathanhaigh/pcit.svg?branch=master)](https://travis-ci.com/nathanhaigh/pcit)
+[![Codecov test coverage](https://codecov.io/gh/nathanhaigh/pcit/branch/master/graph/badge.svg)](https://codecov.io/gh/nathanhaigh/pcit?branch=master)
 <!-- badges: end -->
 
 An R package for weighted gene co-expression networks based on partial correlation and information theory approaches
