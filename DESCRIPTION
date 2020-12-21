@@ -3,7 +3,7 @@ Version: 1.6.0
 Date: 2015-02-11
 Title: Partial Correlation Coefficient with Information Theory
 Author: Nathan S. Watson-Haigh
-Maintainer: Nathan S. Watson-Haigh <nathan.haigh@acpfg.com.au>
+Maintainer: Nathan S. Watson-Haigh <nathan.watson-haigh@sahmri.com>
 Description: Apply Partial Correlation coefficient with Information
         Theory (PCIT) to a correlation matrix.
         The PCIT algorithm identifies meaningful correlations to define
