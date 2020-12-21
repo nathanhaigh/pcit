@@ -17,3 +17,8 @@ addons:
     packages:
       mpi-default-dev
       mpi-default-bin
+  homebrew:
+    packages:
+      open-mpi
+after_success:
+  - Rscript -e 'covr::codecov()'
