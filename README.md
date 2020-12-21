@@ -46,9 +46,7 @@ install_github("nathanhaigh/pcit@*release")
 # Parse out the version info from the DESCRIOTION file
 version=$(grep "^Version:" DESCRIPTION | awk '{print $2}')
 # Tag the current branch using the Changelog entry for this version, asthe message
-git tag -a "v${version}" -F <(perl -e '$v_encountered=0; while(<>){if (/'${version}'/){$v_encountered=1;print;next}; last if /^\d/; print}' ChangeLog)
+git tag -a "${version}" -F <(perl -e '$v_encountered=0; while(<>){if (/'${version}'/){$v_encountered=1;print;next}; last if /^\d/; print}' ChangeLog)
 # Push the tag up to github
-git push origin "v${version}"
-
+git push origin "${version}"
 ```
-
