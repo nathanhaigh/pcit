@@ -8,3 +8,7 @@ r:
   - devel
 r_packages:
   - Rmpi
+addons:
+  apt:
+    packages:
+      libopenmpi-dev
