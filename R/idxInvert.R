@@ -7,17 +7,12 @@ idxInvert <- function(m, idx) {
 		} else {
 			stop("ERROR: when providing the size of a matrix using 'm', it must be a single numeric or the dimensions of a square matrix.")
 		}
-	} else if (length(unique(dim(m)))!=1) {
-		stop("ERROR: when providing the actual matrix using 'm', it must be square.")
 	} else {
-		nNodes <- tryCatch(
-			{
-				nrow(m)
-			},
-			error = function(cond) {
-				stop("ERROR: argument 'm' must be a numeric OR an object on which nrow() can be performed.")
-			}
-		)
+		nNodes <- unique(dim(m))
+
+		if (length(nNodes)!=1) {
+			stop("ERROR: argument 'm' must be the dimentions or size of a square matrix on an object on which dim() returns a square object.")
+		}
 	}
 	
 	return(setdiff(1:(nNodes^2), idx))
