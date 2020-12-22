@@ -24,8 +24,10 @@ SystemRequirements: openmpi: openmpi-devel (rpm) or libopenmpi-dev (deb)
 Suggests:
     Rmpi,
     methods,
-    covr
+    covr,
+    testthat (>= 3.0.0)
 URL: http://dx.doi.org/10.1093/bioinformatics/btn482
         http://bioinformatics.oxfordjournals.org/cgi/content/abstract/26/3/411
 LazyLoad: yes
 Depends: R (>= 2.10)
+Config/testthat/edition: 3
