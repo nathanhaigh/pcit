@@ -20,6 +20,7 @@ Description: Apply Partial Correlation coefficient with Information
         installed) computers which will run in parallel mode.
 Type: Package
 License: GPL-3
+SystemRequirements: openmpi: openmpi-devel (rpm) or libopenmpi-dev (deb)
 Suggests:
     Rmpi,
     methods,
