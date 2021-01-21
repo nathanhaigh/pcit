@@ -1,6 +1,6 @@
 Package: PCIT
-Version: 1.6.0
-Date: 2015-02-11
+Version: 1.6.2
+Date: 2021-01-21
 Title: Partial Correlation Coefficient with Information Theory
 Author: Nathan S. Watson-Haigh
 Maintainer: Nathan S. Watson-Haigh <nathan.watson-haigh@sahmri.com>
